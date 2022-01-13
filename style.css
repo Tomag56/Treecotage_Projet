@@ -30,12 +30,90 @@ header {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+  flex-wrap: wrap;
 }
-/*BLOC1*/
 
+/*FOOTER*/
+footer {
+  min-height: 101px;
+  width: 100%;
+  background-color: #eef1f2;
+  margin: auto;
+}
+
+.footer-texte ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 35px;
+}
+
+.footer-texte ul li {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.RS i {
+  margin-right: 15px;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #000;
+  padding: 0.5em 0.6em;
+}
+
+/*BLOCS & GENERAL*/
+.bloc {
+  min-height: 843px;
+}
+
+.bloc p {
+  margin-top: 100px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.bloc h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.bloc img {
+  height: 650px;
+  width: 650px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 85px;
+  margin: 69px 0px;
+}
+
+.bloc :where(.textebloc2, .textebloc3, .textebloc4, .textebloc5) {
+  height: 301.2647399902344px;
+  width: 500px;
+  margin: 186px 25px;
+  text-align: center;
+}
+.bloc h2,
+.blocfinal h2 {
+  background-color: rgba(196, 196, 196, 0.6);
+  border-radius: 85px;
+  text-align: justify;
+  align-items: center;
+  width: 720px;
+  margin: auto;
+  padding: 20px 35px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*BLOC1*/
 .bloc1 {
   background-image: url(assets/TricotLifestyle/4pelotes.jpg);
-  height: 780px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 85px;
   overflow: hidden;
   background-size: cover;
@@ -44,49 +122,74 @@ header {
   padding: 300px 10px;
 }
 
-.textebloc1 {
-  background-color: rgba(196, 196, 196, 0.6);
-  border-radius: 85px;
-  text-align: center;
-  align-items: center;
-  width: 700px;
-  margin: auto;
-  padding: 30px 25px;
+.textebloc1 p {
+  margin: 0;
+  padding: 2px 20px;
 }
+
 .boutonbloc1 {
   width: 900px;
   text-align: center;
-  margin: 10px auto;
+  margin: 30px auto;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /*BLOC2*/
 .bloc2 {
   background-color: #e09c90;
-  height: 844px;
   display: flex;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: space-around;
+  flex-direction: row;
+  min-height: 843px;
 }
 
-.textebloc2 {
-  height: 301.2647399902344px;
-  width: 533px;
-  left: 90px;
-  top: 1011.889404296875px;
-}
-.image2 {
-  width: 700px;
-  height: 615.61px;
-  overflow: hidden;
-  background-position: cover;
-  border-radius: 85px;
+/*BLOC3*/
+.bloc3 {
+  min-height: 843px;
+  background-color: #d7def8;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-size: 54px;
-  font-weight: 400;
+/*BLOC4*/
+.bloc4 {
+  min-height: 843px;
+  background-color: #b8d4d1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*BLOC5*/
+.bloc5 {
+  min-height: 843px;
+  background-color: #fff3c4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*BLOC FINAL*/
+.blocfinal {
+  background-image: url(assets/TricotLifestyle/KitCouleurAutomn.jpg);
+  height: 594.23px;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 150px 10px;
+}
+
+.blocfinal h2 {
+  font-weight: 700;
+  text-align: center;
 }
 
 /*LES BOUTONS*/
@@ -117,7 +220,7 @@ h1 {
   text-transform: uppercase;
   font-size: 12px;
   padding: 15px 30px;
-  margin: 20px 15px;
+  margin: 80px 15px;
   width: 242px;
   height: 71, 43px;
 }
