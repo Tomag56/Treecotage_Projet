@@ -192,6 +192,19 @@ footer {
   text-align: center;
 }
 
+/*COMPTEUR DE RANGS*/
+h1 {
+  font-size: 44px;
+  text-align: center;
+  font-weight: 400;
+  margin: 35px;
+}
+.zone-compteur {
+  height:287px;
+  text-align: center;
+  margin: 10px 150px;
+
+}
 /*LES BOUTONS*/
 
 #connexion {
