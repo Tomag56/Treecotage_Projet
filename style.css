@@ -8,6 +8,7 @@
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
+/*HEADER**************************************/
 header {
   min-height: 80px;
   background-color: #ffffff;
@@ -32,8 +33,11 @@ header {
   cursor: pointer;
   flex-wrap: wrap;
 }
+.banner ul li:hover {
+  opacity: 0.7;
+}
 
-/*FOOTER*/
+/*FOOTER*****************************************************/
 footer {
   min-height: 101px;
   width: 100%;
@@ -46,23 +50,55 @@ footer {
   list-style: none;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 35px;
 }
 
 .footer-texte ul li {
   font-size: 20px;
   margin-top: 30px;
+  cursor: pointer;
 }
-
 .RS i {
-  margin-right: 15px;
-  display: inline-block;
+  margin-right: 5px;
+  margin-left: 0px;
   border-radius: 60px;
   box-shadow: 0px 0px 2px #000;
   padding: 0.5em 0.6em;
+  cursor: pointer;
+}
+.RS i:nth-child(2) {
+  padding: 0.5em 0.7em;
+}
+.RS i:nth-child(3) {
+  padding: 0.5em 0.5em;
 }
 
-/*BLOCS & GENERAL*/
+.RS i:nth-child(1):hover {
+  background-color: #e09c90;
+  color: #fff;
+}
+
+.RS i:nth-child(2):hover {
+  background-color: #d7def8;
+  color: #fff;
+}
+
+.RS i:nth-child(3):hover {
+  background-color: #b8d4d1;
+  color: #fff;
+}
+
+.RS i:nth-child(4):hover {
+  background-color: #fff3c4;
+  color: #fff;
+}
+
+.footer-texte ul li:hover {
+  opacity: 0.7;
+}
+
+/*BLOCS & GENERAL***********************************************/
 .bloc {
   min-height: 843px;
 }
@@ -89,9 +125,9 @@ footer {
 }
 
 .bloc :where(.textebloc2, .textebloc3, .textebloc4, .textebloc5) {
-  height: 301.2647399902344px;
+  min-height: 301.2647399902344px;
   width: 500px;
-  margin: 186px 25px;
+  margin: 70px 25px;
   text-align: center;
 }
 .bloc h2,
@@ -144,6 +180,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   min-height: 843px;
 }
 
@@ -154,6 +191,7 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*BLOC4*/
@@ -163,6 +201,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*BLOC5*/
@@ -172,6 +211,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*BLOC FINAL*/
@@ -184,6 +224,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+
   padding: 150px 10px;
 }
 
@@ -192,20 +233,162 @@ footer {
   text-align: center;
 }
 
-/*COMPTEUR DE RANGS*/
+/*COMPTEUR DE RANGS*******************************************/
+.compteurRangs {
+  max-width: 1300px;
+  margin: auto;
+}
+
 h1 {
   font-size: 44px;
   text-align: center;
   font-weight: 400;
-  margin: 35px;
+  padding: 31px;
 }
-.zone-compteur {
-  height:287px;
-  text-align: center;
-  margin: 10px 150px;
+.zoneCompteurPrincipal {
+  height: 287px;
+  margin: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.compteur {
+  height: 250px;
+  width: 540px;
+  background-color: #eef1f2;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.compteur span {
+  padding: 0.6em 0.6em;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 80px;
 }
-/*LES BOUTONS*/
+.compteurTexte {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 45px;
+}
+
+.compteurRangs h2 {
+  font-size: 22px; /*28px demandé*/
+  font-weight: normal;
+}
+
+.zoneCompteurSecondaire {
+  min-height: 287px;
+  margin: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.compteurS2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.compteurElements {
+  min-width: 280px;
+  height: 200px;
+  background-color: #eef1f2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
+  border-radius: 15px;
+}
+
+.compteurElements span {
+  padding: 0.6em 0.6em;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 70px;
+}
+
+#compteur2 {
+  background-color: #d7def8;
+  overflow: hidden;
+}
+#compteur3 {
+  background-color: #b8d4d1;
+  overflow: hidden;
+}
+#compteur4 {
+  background-color: #fff3c4;
+  overflow: hidden;
+}
+
+.texteElement {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+}
+
+.texteElement p:nth-child(1) {
+  font-weight: bold;
+}
+
+.compteurliens {
+  cursor: pointer;
+}
+.compteurliens:hover {
+  color: #e09c90;
+}
+#h2compteurS {
+  margin-left: 50px;
+}
+
+.formulaire {
+  min-height: 100px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size:  28px;
+  margin-top: 40px;
+}
+.form1 select {
+  width: 500px;
+}
+.formulaire button {
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size:15px;
+  background: #eef1f2;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  margin: 45px;
+}
+
+.formulaire button i{
+  margin-right: 9px;
+  font-weight: bolder;
+  padding: 0.5em 0.6em;
+  border-radius: 50px;
+  background: #eef1f2;
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+}
+
+/*LES BOUTONS********************************************************/
 
 #connexion {
   height: 47px;
@@ -222,10 +405,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.fas {
-  margin-right: 1px;
-}
-
 .boutonNoir {
   text-decoration: none;
   background: rgba(12, 12, 12, 0.73);
@@ -236,4 +415,36 @@ h1 {
   margin: 80px 15px;
   width: 242px;
   height: 71, 43px;
+  cursor: pointer;
+}
+
+.compteur i {
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 0.5em 0.6em;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #eef1f2;
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+}
+
+.compteur i:hover {
+  border-radius: 50px;
+  background: #eef1f2;
+  box-shadow: inset 6px 6px 12px #cacdce, inset -6px -6px 12px #ffffff;
+}
+
+.compteurS2 i {
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 0.5em 0.6em;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #eef1f2;
+  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+}
+.compteurS2 i:hover {
+  border-radius: 50px;
+  background: #eef1f2;
+  box-shadow: inset 6px 6px 12px #cacdce, inset -6px -6px 12px #ffffff;
 }
