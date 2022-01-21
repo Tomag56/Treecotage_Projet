@@ -348,7 +348,7 @@ h1 {
   margin-left: 50px;
 }
 
-.formulaire {
+.formulaireCompteur {
   min-height: 100px;
   font-weight: bold;
   display: flex;
@@ -368,7 +368,7 @@ h1 {
 .form1 select {
   width: 500px;
 }
-.formulaire button {
+.formulaireCompteur button {
   padding: 15px 30px;
   text-transform: uppercase;
   font-weight: bold;
@@ -379,7 +379,7 @@ h1 {
   margin: 45px;
 }
 
-.formulaire button i{
+.formulaireCompteur button i{
   margin-right: 9px;
   font-weight: bolder;
   padding: 0.5em 0.6em;
@@ -387,6 +387,8 @@ h1 {
   background: #eef1f2;
   box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
 }
+
+/*MON PROFIL*************************************************************/
 
 /*LES BOUTONS********************************************************/
 
@@ -447,4 +449,99 @@ h1 {
   border-radius: 50px;
   background: #eef1f2;
   box-shadow: inset 6px 6px 12px #cacdce, inset -6px -6px 12px #ffffff;
+}
+
+/*Bouton switch*******************************************************************************************************************/
+.onoffswitch {
+  position: relative; width: 90px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 15px;
+  background-color: #EEF1F2; color: #000000;
+}
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 15px;
+  background-color: #EEF1F2; color: #000000;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 29px; margin: 0.5px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 56px;
+  border: 2px solid #999999; border-radius: 20px;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}.onoffswitch {
+  position: relative; width: 90px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 15px;
+  background-color: #EEF1F2; color: #000000;
+}
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 15px;
+  background-color: #EEF1F2; color: #000000;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 29px; margin: 0.5px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 56px;
+  border: 2px solid #999999; border-radius: 20px;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
 }
