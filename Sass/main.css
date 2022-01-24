@@ -539,7 +539,7 @@ h1 {
 
 .formulaire {
   max-width: 1200px;
-  margin: auto;
+  margin: 1px 100px;
 }
 
 .formulaire .formulaire1 {
@@ -547,16 +547,48 @@ h1 {
 }
 
 .formulaire .formulaire1 legend {
-  font-family: "roboto";
+  font-family: 'roboto';
   font-size: 28px;
 }
 
 .formulaire .formulaire1 input {
-  margin-right: 20px;
+  margin-top: 30px;
+  height: 38px;
+  background-color: #EEF1F2;
+  border-radius: 15px;
 }
 
-.formulaire .formulaire1 input type:text {
-  width: 25%;
+.formulaire .formulaire1 ::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.formulaire .formulaire1 :-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.formulaire .formulaire1 ::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.formulaire .formulaire1 ::placeholder {
+  color: black;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+#nom,
+#prenom {
+  width: 47%;
+}
+
+#email {
+  width: 100%;
 }
 
 /*LES BOUTONS********************************************************/
@@ -565,7 +597,7 @@ h1 {
   width: 203px;
   left: 0px;
   top: 0px;
-  background-color: #B8D4D1;
+  background-color: #ffffff;
   padding: 7px 15px;
   border: 1px solid #000;
   border-radius: 15px;

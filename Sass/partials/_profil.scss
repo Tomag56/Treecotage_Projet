@@ -1,24 +1,32 @@
-.formulaire{
-    max-width: 1200px;
-    margin: auto;
+.formulaire {
+  max-width: 1200px;
+  margin: 1px 100px;
 
-    .formulaire1{
+  .formulaire1 {
+    width: 1200px;
 
-        width: 1200px;
-        
-
-        legend{
-            font-family: "roboto";
-            font-size: 28px;
-        }
-        input {
-            margin-right: 20px;
-            
-
-            type:text{
-                width:25%;
-            }
-
-        }
+    legend {
+      font-family: 'roboto';
+      font-size: 28px;
     }
+    input {
+      margin-top: 30px;
+
+      height: 38px;
+      background-color: $fondFormulaire;
+      border-radius: $borderFormulaire;
+    }
+    ::placeholder {
+      color: black;
+      font-size: 16px;
+      padding-left: 20px;
+    }
+  }
+}
+#nom,
+#prenom {
+  width: 47%;
+}
+#email {
+  width: 100%;
 }

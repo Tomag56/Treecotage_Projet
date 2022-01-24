@@ -5,7 +5,7 @@
   width: 203px;
   left: 0px;
   top: 0px;
-  background-color: $couleurVerte;
+  background-color: $fondPrincipal;
   padding: 7px 15px;
   border: 1px solid #000;
   border-radius: 15px;
@@ -28,20 +28,22 @@
   cursor: pointer;
 }
 
-.compteur i {
-  font-size: 25px;
-  font-weight: bolder;
-  padding: 0.5em 0.6em;
-  cursor: pointer;
-  border-radius: 50px;
-  background: #eef1f2;
-  box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
-}
+.compteur {
+  i {
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0.5em 0.6em;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #eef1f2;
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #ffffff;
+  }
 
-.compteur i:hover {
-  border-radius: 50px;
-  background: #eef1f2;
-  box-shadow: inset 6px 6px 12px #cacdce, inset -6px -6px 12px #ffffff;
+  i:hover {
+    border-radius: 50px;
+    background: #eef1f2;
+    box-shadow: inset 6px 6px 12px #cacdce, inset -6px -6px 12px #ffffff;
+  }
 }
 
 .compteurS2 i {
