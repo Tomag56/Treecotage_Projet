@@ -538,45 +538,45 @@ h1 {
 }
 
 .formulaire {
-  max-width: 1200px;
-  margin: 1px 100px;
-}
-
-.formulaire .formulaire1 {
   width: 1200px;
+  margin: 0px 100px;
+  left: auto;
+  right: auto;
 }
 
-.formulaire .formulaire1 legend {
+.formulaire .formulaireblock legend {
+  left: 0;
   font-family: 'roboto';
   font-size: 28px;
 }
 
-.formulaire .formulaire1 input {
+.formulaire .formulaireblock input {
   margin-top: 30px;
   height: 38px;
   background-color: #EEF1F2;
   border-radius: 15px;
+  border: none;
 }
 
-.formulaire .formulaire1 ::-webkit-input-placeholder {
+.formulaire .formulaireblock ::-webkit-input-placeholder {
   color: black;
   font-size: 16px;
   padding-left: 20px;
 }
 
-.formulaire .formulaire1 :-ms-input-placeholder {
+.formulaire .formulaireblock :-ms-input-placeholder {
   color: black;
   font-size: 16px;
   padding-left: 20px;
 }
 
-.formulaire .formulaire1 ::-ms-input-placeholder {
+.formulaire .formulaireblock ::-ms-input-placeholder {
   color: black;
   font-size: 16px;
   padding-left: 20px;
 }
 
-.formulaire .formulaire1 ::placeholder {
+.formulaire .formulaireblock ::placeholder {
   color: black;
   font-size: 16px;
   padding-left: 20px;
@@ -584,7 +584,7 @@ h1 {
 
 #nom,
 #prenom {
-  width: 47%;
+  width: 48%;
 }
 
 #email {
