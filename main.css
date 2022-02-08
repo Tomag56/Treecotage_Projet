@@ -24,7 +24,6 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -33,7 +32,7 @@ header {
   margin-top: 10px;
 }
 
-.banner ul li {
+.banner ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +41,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -161,19 +162,31 @@ footer {
   text-align: center;
 }
 
-.bloc h2,
-.bloc .blocfinal h2 {
+.bloc .textebloc1 {
   background-color: rgba(196, 196, 196, 0.6);
   border-radius: 85px;
-  text-align: justify;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 720px;
+  width: 920px;
   margin: auto;
   padding: 20px 35px;
-  font-size: 18px;
+  text-align: center;
+}
+
+.bloc .textebloc1 h2 {
+  font-family: 'Roboto';
+  font-size: 38px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 46px;
+  margin-top: 30px;
+}
+
+.bloc .textebloc1 p {
+  font-family: 'Roboto';
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 30px;
 }
 
 .bloc .bloc1 {
@@ -195,11 +208,6 @@ footer {
   margin: 35px 61px;
   text-align: center;
   padding: 300px 10px;
-}
-
-.bloc .textebloc1 p {
-  margin: 0;
-  padding: 2px 20px;
 }
 
 .bloc .boutonbloc1 {
@@ -307,9 +315,20 @@ footer {
   padding: 150px 10px;
 }
 
-.blocfinal h2 {
-  font-weight: 700;
-  text-align: center;
+.blocfinal .texteblocfinal {
+  background-color: rgba(196, 196, 196, 0.6);
+  border-radius: 85px;
+  width: 920px;
+  margin: auto;
+  padding: 20px 35px;
+}
+
+.blocfinal .texteblocfinal h2 {
+  font-family: 'Roboto';
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
 }
 
 /*COMPTEUR DE RANGS*******************************************/

@@ -1,3 +1,12 @@
+// mixin
+@mixin fondGris {
+  background-color: rgba(196, 196, 196, 0.6);
+  border-radius: 85px;
+  width: 920px;
+  margin: auto;
+  padding: 20px 35px;
+}
+
 /*BLOCS & GENERAL***********************************************/
 .bloc {
   p {
@@ -27,17 +36,27 @@
     margin: 70px 25px;
     text-align: center;
   }
-  h2,
-  .blocfinal h2 {
-    background-color: rgba(196, 196, 196, 0.6);
-    border-radius: 85px;
-    text-align: justify;
-    align-items: center;
-    width: 720px;
-    margin: auto;
-    padding: 20px 35px;
-    font-size: 18px;
-    font-weight: 400;
+  .textebloc1 {
+    @include fondGris;
+    text-align: center;
+
+    h2 {
+      font-family: 'Roboto';
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      margin-top: 30px;
+    }
+    p {
+      font-family: 'Roboto';
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+
+      margin: 30px;
+    }
   }
 
   /*BLOC1*/
@@ -55,10 +74,10 @@
     padding: 300px 10px;
   }
 
-  .textebloc1 p {
-    margin: 0;
-    padding: 2px 20px;
-  }
+  // .textebloc1  {
+  //   margin: 0;
+  //   padding: 2px 20px;
+  // }
 
   .boutonbloc1 {
     width: 900px;
@@ -123,8 +142,15 @@
   text-align: center;
   padding: 150px 10px;
 
-  h2 {
-    font-weight: 700;
-    text-align: center;
+  .texteblocfinal {
+    @include fondGris;
+    h2 {
+      font-family: 'Roboto';
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      
+    }
   }
 }
